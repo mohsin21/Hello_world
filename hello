@@ -12,14 +12,15 @@ class Main
 		// your code goes here
 		Scanner in = new Scanner(System.in);
 		System.out.println("Welcome to Mano & Mohsin's Pizza Plaza!");
-		int amt=0,op1,op2,op3;
+		int amt1=0amt2=0,amt3=0,,op1,op2,op3;
 		char ch;
 		//String offer = jazz;
+    do{
 		System.out.println("Today offer code= jazz......30% off");
 			System.out.println("Today offer code= bazz......Rs 50off");
 		System.out.println("Select your order:");
 		System.out.println("\n 1.Pizza \n 2.Drinks \n 3.French fries ");
-		//Scanner in = new Scanner(System.in);
+	
 		op1=in.nextInt();
 		switch(op1)
 		{
@@ -36,11 +37,59 @@ class Main
 						if(op3==1)
 						{
 							System.out.println("Pizza Prize= Rs 150");
-							amt=150;
-							System.out.println("Do you have any offer code?Y/N");
-							ch = in.next().charAt(0);
-							if(ch=='Y')
-							{
+							amt1+=150;
+            }
+            else if(op3==2)
+            {
+              System.out.println("Pizza Prize= Rs 300");
+              amt1+=300;
+            }
+            else
+            {
+              System.out.println("Pizza Prize= Rs 450");
+              amt1+=450;
+            }
+            break;
+            case 2:
+            System.out.println("Select your drink:");
+            System.out.println("\n1.Coke \n2.Beer");
+            int d=in.nextInt();
+            if(d==1)
+            {
+              System.out.println("Cola Prize= Rs50");
+              amt2=amt2+50;
+            }
+            else
+            {
+              System.out.println("Beer Prize= Rs 100");
+              amt2+=100;
+            }
+            break;
+            case 3:
+            System.out.println("French fries= Rs 80");
+            amt3+=80;
+            break;
+            default:
+            System.out.println("Do you want to continue? Y/N");
+            char a = in.next();
+        }while(a=='Y' || a == 'y')
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						/*	{
 								System.out.println("Select your offer code:");
 									System.out.println("\n 1.jazz \n 2.bazz:");
 									int n=in.nextInt();
@@ -60,7 +109,7 @@ class Main
 							}
 				}
 				default:
-				System.out.println("exit");
+				System.out.println("exit");*/
 		}
 	}
 }
