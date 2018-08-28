@@ -1,8 +1,67 @@
+/* package whatever; // don't place package name! */
+
 import java.util.*;
-class hello
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Main
 {
-public static void main(String args[])
-{
-System.out.println("Hello Namaste!);
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner in = new Scanner(System.in);
+		System.out.println("Welcome to Mano & Mohsin's Pizza Plaza!");
+		int amt=0,op1,op2,op3;
+		char ch;
+		//String offer = jazz;
+		System.out.println("Today offer code= jazz......30% off");
+			System.out.println("Today offer code= bazz......Rs 50off");
+		System.out.println("Select your order:");
+		System.out.println("\n 1.Pizza \n 2.Drinks \n 3.French fries ");
+		//Scanner in = new Scanner(System.in);
+		op1=in.nextInt();
+		switch(op1)
+		{
+			case 1:
+				System.out.println("Select your pizza:");
+				System.out.println("\n 1.Veg \n 2.Non-Veg");
+				op2=in.nextInt();
+				switch(op2)
+				{
+					case 1:
+						System.out.println("Select your size:");
+						System.out.println("\n 1.Small \n 2.Medium \n 3.Large");
+						op3=in.nextInt();
+						if(op3==1)
+						{
+							System.out.println("Pizza Prize= Rs 150");
+							amt=150;
+							System.out.println("Do you have any offer code?Y/N");
+							ch = in.next().charAt(0);
+							if(ch=='Y')
+							{
+								System.out.println("Select your offer code:");
+									System.out.println("\n 1.jazz \n 2.bazz:");
+									int n=in.nextInt();
+									
+								
+								
+								if(n==1)
+								{
+									amt=amt-((amt*30)/100);
+									System.out.println("Your final amount = "+amt);
+								}
+								else
+								{
+									amt=amt-50;
+									System.out.println("Your final amount = "+amt);
+								}
+							}
+				}
+				default:
+				System.out.println("exit");
+		}
+	}
 }
 }
