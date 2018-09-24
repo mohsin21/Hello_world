@@ -4,17 +4,17 @@ public class Main
 	public static void main(String[] args) {
 	    Scanner in = new Scanner(System.in);
 		int num;
-		System.out.println("Enter a number:");
+		System.out.println("INPUT");
 		num = in.nextInt();
 		if(num == 0)
 		{
-		    System.out.println("Number is zero");
+		    System.out.println("Zero");
 		}
 		else if(num > 0)
 		{
-		    System.out.println("Number is positive");
+		    System.out.println("Positive");
 		}
 		else
-		System.out.println("Number is negative");
+		System.out.println("Negative");
 	}
 }
