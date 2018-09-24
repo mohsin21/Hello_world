@@ -5,11 +5,11 @@ public class Main
 	    Scanner in = new Scanner(System.in);
 	    int n;
 		n = in.nextInt();
-		String str = "hello";
+		String str = "hello/n";
 		int i = 1;
 		while( i<=n )
 		{
-		    System.out.println(str );
+		    System.out.println(str);
 		    i++;
 		}
 		
