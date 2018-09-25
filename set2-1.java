@@ -3,10 +3,14 @@ public class Main
 {
 	public static void main(String[] args) {
 	    Scanner in = new Scanner(System.in);
-	    int n,p;
-	    n = in.nextInt();
-	    p = in.nextInt();
-	    
-	    System.out.println(Math.pow(n,p));
+	    int base,exponent,prod=1;
+	    base = in.nextInt();
+	    exponent = in.nextInt();
+	    while(exponent!=0)
+	    {
+	        prod = prod * base;
+	        --exponent;
+	    }
+		System.out.println(prod);
 	}
 }
