@@ -6,7 +6,7 @@ public class Main
    Scanner in=new Scanner(System.in);   
    int n=in.nextInt();
    int m=in.nextInt();
-   for(int i=n;i<m;i++)
+   for(int i=n+1;i<m;i++)
    {
      if((i)%2==0)
      {
