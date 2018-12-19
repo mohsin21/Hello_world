@@ -10,18 +10,21 @@ public class Main {
         while (low < high) {
             boolean flag = false;
 
-            for(int i = 2; i <= low/2; ++i) {
+            for(int i = 2; i <= low/2; i++) {
                 // condition for nonprime number
                 if(low % i == 0) {
                     flag = true;
                     break;
                 }
             }
-
+            if(low==1)
+            {
+              low+=1;
+            }
             if (!flag)
                 System.out.print(low + " ");
 
-            ++low;
+            low++;
         }
     }
 }
